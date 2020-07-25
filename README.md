@@ -1,4 +1,10 @@
 # pyTAG: Python based Tracking Assisted Ground-truthing
+
+pyTAG is a lightweight tool for generating ground-truth data. The only requirement for that is required for pyTAG is OpenCV. pyTAG supports both OpenCV versions 3.x and 4.x. To install OpenCV use the command below.
+
+```
+pip install opencv-python
+```
  
 If you are using pyTAG, please cite our work as given below.
 

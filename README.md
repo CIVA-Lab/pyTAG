@@ -13,6 +13,7 @@ pyTAG has three modes for ground-truth generation: Automatic, Semi-automatic and
 * MIL
 * MEDIANFLOW
 * BOOSTING
+
 On the other hand, the user can interfere the object tracking process by pausing, move back and forward on frames, change the object tracking methods, reinitialize bounding box, and resume/restart the object tracking algorithm. This is the semi-automatic mode for ground-truth generation.
 
 Another alternative for the semi-automatic ground-truth generation mode is by using linear interpolation. The frame skip size can be modified by the user and a bounding box is drawn after the size of the skip frame.
@@ -41,6 +42,17 @@ The tracker evaluator is for visually comparing 2 ground-truth data and does ser
 ```
 python trackerEvaluator.py
 ```
+
+### How to use the interactive tracking-based ground truth generation
+The user interactions are mapped to only three keys.
+* To stop/pause on the current frame press the ```space``` key.
+* To move to the **next** frame in stopped/paused state press the ```n``` key.
+* To move to the **previous** frame in stopped/paused state press the ```p``` key.
+* To reinitialize the bounding box in the stopped/paused state and use the mouse by holding on the ```left-click``` and release the ```left-click``` when you are done.
+
+The state machine that shows the interactions are given in the figure below.
+
+
 
 If you are using pyTAG, please cite our work as given below.
 

@@ -6,6 +6,11 @@ pyTAG is a lightweight tool for generating ground-truth data. pyTAG has only bee
 pip install opencv-python
 ```
 ## About pyTAG
+
+
+![](/figures/pyTAG_Architecture_color.png)
+
+
 pyTAG has three modes for ground-truth generation: Automatic, Semi-automatic and Full Manual. For fully automatic ground-truth generation pyTAG uses six of the OpenCV's state of the art object tracking algorithms.
 * CSRT
 * KCF

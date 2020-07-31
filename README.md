@@ -52,7 +52,7 @@ The user interactions are mapped to only three keys.
 
 The state machine that shows the interactions are given in the figure below.
 
-
+![](/figures/editingModuleFSMv3.png | width=100)
 
 If you are using pyTAG, please cite our work as given below.
 

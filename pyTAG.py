@@ -85,7 +85,7 @@ def reinit_tracker(restart,frameNumber,video):
             # Tracking failure
 			cv2.putText(frame, "The tracker has failed, please reinitialise", (100,80), cv2.FONT_HERSHEY_SIMPLEX, 0.75,(0,0,255),2)
 			restart = True
-			cv2.destroyWindow("ITAGGen")
+			cv2.destroyWindow("pyTAG")
 			print ("The tracker failed on frame number: " + str('{0:04}'.format(frameNumber)))
 			ok, frame = video.read()
 			reinit_tracker(restart,frameNumber,video)
@@ -98,7 +98,7 @@ def reinit_tracker(restart,frameNumber,video):
 		cv2.putText(frame, "Frame number: " + str('{0:04}'.format(frameNumber)), (100,80),cv2.FONT_HERSHEY_SIMPLEX, 0.75, (50,170,50), 2 )
 
         # Display result
-		cv2.imshow("ITAGGen", frame)
+		cv2.imshow("pyTAG", frame)
 
         # Exit if ESC pressed
 		k = cv2.waitKey(1) & 0xff
@@ -184,7 +184,7 @@ def reinit_tracker(restart,frameNumber,video):
 					#traker_bounding_box_dictionary[frameID] = "0 0 0 0"
 					break
 				# Display each frame
-				cv2.imshow("ITAGGen", frame)
+				cv2.imshow("pyTAG", frame)
 				
 			#cv2.destroyWindow("ROI selector")
 			reinit_tracker(restart,frameNumber,video)

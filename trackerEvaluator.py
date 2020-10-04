@@ -4,7 +4,7 @@ import sys
 #do not forget to change the three variables below
 video_source = "/video/%04d.png"
 groundtruth_report_dir = "/foo1/bar1.txt"
-tracker_report_dir = "/foo2/bar2.txt"
+tracker_report_dir = "/foo1/bar2.txt"
 
 if __name__ == '__main__':
 	frameNumber = 0
@@ -62,7 +62,7 @@ if __name__ == '__main__':
 		
 		cv2.putText(frame, "Frame number: " + str('{0:04}'.format(frameNumber)), (100,80),cv2.FONT_HERSHEY_SIMPLEX, 0.75, (50,170,50), 2 )
 		cv2.imshow("Tracking",frame)
-		k = cv2.waitKey(50) & 0xff
+		k = cv2.waitKey(250) & 0xff
 		if k == 32:
 			bbox = cv2.selectROI(frame, False)
 			cv2.destroyWindow("ROI selector")

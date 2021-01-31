@@ -39,6 +39,12 @@ The default skip frame size is 5, which means after each 5 frame the user is req
 ```
 python groundtruth_generator_linear_interpolation.py
 ```
+
+<p align="center">
+  <img src="/figures/pyTAG Linear Interpolation Feature.gif" alt="animated" />
+  <img src="/figures/pyTAG Linear Interpolation Feature_Output.gif" alt="animated" />
+</p>
+
 ### Fully Manual Ground-truth Generation/Reviwing Module
 The Full manual ground-truth generation can be used for multiple purposes. You can use it on an exiting ground-truth data to edit/fix/correct. Another usage of this module allows you to generate ground-truth data by fully manual, by drawing bounding boxes for each frame. To run ``` reviewGT.py ```, use the command below.
 ```

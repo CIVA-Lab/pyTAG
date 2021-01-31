@@ -30,8 +30,9 @@ The tracking assisted ground-truth generation is uses the ```pyTAG.py``` code an
 ```
 python pyTAG.py
 ```
-
-![](/figures/pyTAG_Interactive_Ground-truth_Generation_with_Trackers.gif)
+<p align="center">
+  <img src="/figures/pyTAG Interactive Ground-truth Generation with Trackers.gif" alt="animated" />
+</p>
 
 ### Linear Interpolation-based Ground-truth Generation (Semi-Automatic Mode)
 The default skip frame size is 5, which means after each 5 frame the user is required to draw a bounding box. The frame skip size can be modified inside the code. Along with the frame skip size you need to provide the video source inside the code. To run ``` groundtruth_generator_linear_interpolation.py ```, use the command below.
